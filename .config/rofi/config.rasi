@@ -1,0 +1,9 @@
+configuration {
+    lines: 8;
+    width: 1024;
+
+    hide-scrollbar: true;
+    fullscreen: false;
+}
+
+@import "rofi-collection/minimal.rasi";

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+$HOME/autostarts/autostarts
+
+BLADE_DIR=$HOME/blade
+$BLADE_DIR/polybar-collection/launch.sh
