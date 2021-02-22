@@ -12,3 +12,6 @@
 # Windows
 Thumbs.db
 [Dd]esktop.ini
+
+*.log
+

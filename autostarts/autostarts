@@ -1,7 +1,9 @@
 #!/bin/sh
 
+sxhkd &
+
 $HOME/.fehbg
 
-picom --experimental-backends -b
+# picom --experimental-backends -b
 thunar --daemon
-if ! urxvtc "$@"; then urxvtd -q -o -f; fi
+# if ! urxvtc "$@"; then urxvtd -q -o -f; fi

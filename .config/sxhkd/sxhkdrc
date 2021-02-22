@@ -1,0 +1,5 @@
+super + r
+	rofi -theme rofi-collection/minimal.rasi -show run
+
+super + space
+	rofi -theme rofi-collection/minimal.rasi -combi-modi window,drun -show combi -modi combi

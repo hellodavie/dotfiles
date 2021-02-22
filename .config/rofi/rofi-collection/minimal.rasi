@@ -1,17 +1,18 @@
+@import "_shared.rasi"
+
 configuration {
   display-run: ":: ";
   display-drun: ":: ";
   display-window: ":: ";
+  display-combi: ":: ";
   drun-display-format: "{name}";
-  font: "Iosevka Nerd Font Medium 12";
   modi: "window,run,drun";
   show-icons: false;
 }
 
 * {
-
   bg: #151515;
-  bg-alt: #414141;
+  bg-alt: #666;
 
   fg: #ffffff;
   fg-alt: #f5f5f5;
@@ -35,7 +36,7 @@ element selected {
 }
 
 entry {
-  padding: 12 0 12 3;
+  padding: 12 0 12 6;
   text-color: @fg;
 }
 
@@ -53,7 +54,7 @@ mainbox {
 }
 
 prompt {
-  padding: 12 0 0 12;
+  padding: 12 0 0 13;
   text-color: @fg;
 }
 

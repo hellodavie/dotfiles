@@ -1,9 +1,13 @@
 configuration {
-    lines: 8;
-    width: 1024;
-
-    hide-scrollbar: true;
-    fullscreen: false;
+  show-icons:           true;
+  cycle:                true;
+  hide-scrollbar:       true;
+  disable-history:      true;
+  sidebar-mode:         false;
+  modi:                 "drun,run,window,file-browser";
+  display-drun:         "";
+  display-run:          "";
+  display-window:       "";
+  display-file-browser: "";
+  columns: 3;
 }
-
-@import "rofi-collection/minimal.rasi";

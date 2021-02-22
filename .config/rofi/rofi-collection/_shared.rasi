@@ -1,0 +1,9 @@
+configuration {
+  lines: 8;
+  width: 800;
+
+  hide-scrollbar: true;
+  fullscreen: false;
+
+  font: "monospace 13";
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+source $HOME/.owl4ce_var
+
+command -v {"mpd","mpc"} > /dev/null 2>&1 || exit 1
+
+run() {
+    while true; do
+        mpc current > $NCMPCPP_SCRIPTS_DIR/current-track
+        mpc idle &> /dev/null
+        [[ "$(cat $NCMPCPP_SCRIPTS_DIR/current-track)" != *"$(mpc current)"* ]] && \
+        bash -c "$NCMPCPP_SCRIPTS_DIR/on-track-change"
+    done
+}
+
+{
+    if [[ "$(pstree 2> /dev/null)" = *"mpd"* ]]; then
+        run
+    else
+        mpd &> /dev/null
+        run
+    fi
+} &
