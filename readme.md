@@ -5,7 +5,7 @@ Welcome to my `~` (crib)
 <br>
 <br>
 
-Here are some of my somewhat disorganised dotfiles.
+Here are some of my (disorganised) dotfiles.
 Parts of this rice are based on dotfiles from [elenapan](https://github.com/elenapan/dotfiles) and [owl4ce](https://github.com/owl4ce/dotfiles). Thank you! ✨🤍
 
 Fonts used:
@@ -16,7 +16,15 @@ Fonts used:
 
 
 Elements:
- - Music player `ncmpcpp` with con
+ - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
+ - Window manager: [openbox](http://openbox.org)
+ - Bunnyfetch from [elenapan](https://github.com/elenapan/dotfiles)
+ - Cutefetch from [cybarspace](https://github.com/cybarspace/cutefetch)
+ - Music player: `ncmpcpp`
+ - Music notification: `dunst`
+ - Visualiser: `cava`
+ - htop: `htop` (duh!)
+ - My assignment: `vim`
 
 
 Install on Arch-based distros with
@@ -28,6 +36,6 @@ Consider aliasing `gimme=startx ~/.xinitrc` so you can do something like `gimme 
 
 Some essential packages for my build, and possibly yours,
 
-`sh
+```sh
 $ pacman -S amd-ucode nvidia bluez bluez-utils tlp dos2unix firefox font-manager git gparted htop imagemagick networkmanager ntfs-3g pavucontrol polkit powertop pulseaudio pulseaudio-alsa ranger refind rsync scrot wget xf86-input-libinput xf86-video-nouveau xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xrdb xorg-xset xorg-xwininfo xterm zip zsh
-`
+```
